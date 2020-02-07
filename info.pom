@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
   <name>Jsoup Servlet</name>
-  <description>JSoup Servlet Utilities</description>
+  <description>Jsoup Servlet Utilities</description>
   <url>https://github.com/topobyte/jsoup-servlet</url>
   <licenseName>GNU Lesser General Public License (LGPL), Version 3</licenseName>
   <licenseUrl>https://www.gnu.org/licenses/lgpl-3.0.txt</licenseUrl>
