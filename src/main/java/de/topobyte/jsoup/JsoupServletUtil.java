@@ -30,6 +30,13 @@ public class JsoupServletUtil
 	public static void respond(HttpServletResponse response,
 			ContentGeneratable generator) throws IOException
 	{
+		respond(response, generator, true);
+	}
+
+	public static void respond(HttpServletResponse response,
+			ContentGeneratable generator, boolean writeDoctype)
+			throws IOException
+	{
 		response.setCharacterEncoding("UTF-8");
 
 		PrintWriter writer = response.getWriter();
@@ -37,6 +44,7 @@ public class JsoupServletUtil
 		generator.generate();
 
 		Document document = generator.getBuilder().getDocument();
+		writer.write("<!DOCTYPE html>");
 		writer.write(document.toString());
 
 		writer.close();
@@ -45,9 +53,16 @@ public class JsoupServletUtil
 	public static void respond(HttpServletResponse response, Document document)
 			throws IOException
 	{
+		respond(response, document, true);
+	}
+
+	public static void respond(HttpServletResponse response, Document document,
+			boolean writeDoctype) throws IOException
+	{
 		response.setCharacterEncoding("UTF-8");
 
 		PrintWriter writer = response.getWriter();
+		writer.write("<!DOCTYPE html>");
 		writer.write(document.toString());
 
 		writer.close();
