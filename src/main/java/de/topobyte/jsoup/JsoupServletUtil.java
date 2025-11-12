@@ -20,9 +20,9 @@ package de.topobyte.jsoup;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.http.HttpServletResponse;
-
 import org.jsoup.nodes.Document;
+
+import jakarta.servlet.http.HttpServletResponse;
 
 public class JsoupServletUtil
 {

@@ -28,7 +28,7 @@ java {
 
 dependencies {
     api 'de.topobyte:jsoup-utils:0.2.0'
-    api 'javax.servlet:javax.servlet-api:3.1.0'
+    api 'jakarta.servlet:jakarta.servlet-api:6.0.0'
 }
 
 java {
